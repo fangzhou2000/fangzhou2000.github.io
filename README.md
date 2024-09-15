@@ -1,2 +1,1 @@
-# fangzhou2000.github.io
-Qijian Tian's homepage
+This is the source code to Qijian Tian's academic homepage.
