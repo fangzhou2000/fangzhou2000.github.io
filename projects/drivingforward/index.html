@@ -151,5 +151,94 @@
         </div>
     </section>
 
+    <!-- <section class="hero teaser">
+        <div class="container is-max-desktop">
+          <div class="hero-body">
+            <video id="teaser" autoplay muted loop playsinline height="100%">
+              <source src="./static/videos/"
+                      type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered">
+              <span class="dnerf">Caption</span>
+            </h2>
+          </div>
+        </div>
+    </section> -->
+
+    <section class="section">
+        <div class="container is-max-desktop">
+          <!-- Abstract. -->
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <h2 class="title is-3">Abstract</h2>
+              <div class="content has-text-justified">
+                We propose DrivingForward, a feed-forward Gaussian Splatting model that reconstructs driving scenes from flexible surround-view input. Driving scene images from vehicle-mounted cameras are typically sparse, with limited overlap, and the movement of the vehicle further complicates the acquisition of camera extrinsics. To tackle these challenges and achieve real-time reconstruction, we jointly train a pose network, a depth network, and a Gaussian network to predict the Gaussian primitives that represent the driving scenes. The pose network and depth network determine the position of the Gaussian primitives in a self-supervised manner, without using depth ground truth and camera extrinsics during training. The Gaussian network independently predicts primitive parameters from each input image, including covariance, opacity, and spherical harmonics coefficients. At the inference stage, our model can achieve feed-forward reconstruction from flexible multi-frame surround-view input. Experiments on the nuScenes dataset show that our model outperforms existing state-of-the-art feed-forward and scene-optimized reconstruction methods in terms of reconstruction.
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+          <!-- Method. -->
+          <div class="columns is-centered">
+            <div class="column is-full-width">
+              <h2 class="title is-3">Method</h2>
+              <!-- Interpolating. -->
+                <div class="content has-text-justified">
+                <p>
+                    Overview of DrivingForward. Given sparse surround-view input from vehicle-mounted cameras 
+                    (e.g., single-frame surround-view images or multi-frame surround-view images), 
+                    our model learns scale-aware localization for Gaussian primitives from the small overlap of spatial and temporal context views. 
+                    A Gaussian network predicts other parameters from each image individually. 
+                    This feed-forward pipeline enables the real-time reconstruction of driving scenes and 
+                    the independent prediction from single-frame images supports flexible input modes. 
+                    At the inference stage, we include only the depth network and the Gaussian network, as shown in the lower part of the figure.
+                </p>
+                <img src="./static/images/main.pdf" 
+                     class="interpolation-image" 
+                     alt="Interpolate start reference image" 
+                     style="width: 80%; height: auto; display: block; margin: 0 auto;">
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+          <h2 class="title">BibTeX</h2>
+          <pre><code>@article{,}</code></pre>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="content has-text-centered">
+            <a class="icon-link"
+               href="">
+              <i class="fas fa-file-pdf"></i>
+            </a>
+            <a class="icon-link" href="https://github.com/fangzhou2000" class="external-link" disabled>
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <div class="columns is-centered">
+            <div class="column is-8">
+              <div class="content">
+                <p>
+                  This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                </p>
+                <p>
+                  The website template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies.
+                </p>
+              </div>
+            </div>
+            <!-- <a href="https://mapmyvisitors.com/web/1bvxj" title="Visit tracker"><img src="https://mapmyvisitors.com/map.png?d=kSH52UUctXHgyZTvsD38_H_styzXoRq6qG_cg4tttWI&cl=ffffff"></a> -->
+          </div>
+          
+        </div>
+    </footer>
+
 </body>
 </html>
