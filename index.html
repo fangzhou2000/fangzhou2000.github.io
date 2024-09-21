@@ -57,26 +57,25 @@
             </tbody></table>
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               
-            <!-- <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()"> -->
-            <tr>
+            <tr onmouseout="drivingforward_stop()" onmouseover="drivingforward_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
-                  <!-- <div class="two" id='nerfcasting_image'><video  width=100% muted autoplay loop>
-                  <source src="images/nerfcasting.mp4" type="video/mp4">
+                  <div class="two" id='drivingforward_video'><video  width=100% muted autoplay loop>
+                  <source src="projects/drivingforward/static/videos/demo.mp4" type="video/mp4">
                   Your browser does not support the video tag.
-                  </video></div> -->
-                  <img src='projects/drivingforward/static/images/main.png' width=100%>
+                  </video></div>
+                  <img src='images/drivingforward.png' width=100%>
                 </div>
-                <!-- <script type="text/javascript">
-                  function nerfcasting_start() {
-                    document.getElementById('nerfcasting_image').style.opacity = "1";
+                <script type="text/javascript">
+                  function drivingforward_start() {
+                    document.getElementById('drivingforward_video').style.opacity = "1";
                   }
         
-                  function nerfcasting_stop() {
-                    document.getElementById('nerfcasting_image').style.opacity = "0";
+                  function drivingforward_stop() {
+                    document.getElementById('drivingforward_video').style.opacity = "0";
                   }
-                  nerfcasting_stop()
-                </script> -->
+                  drivingforward_stop()
+                </script>
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://fangzhou2000.github.io/projects/drivingforward/">
