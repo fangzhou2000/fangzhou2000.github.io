@@ -48,9 +48,9 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <h2>Research</h2>
                   <p>
-                    My research interests involve <strong>computer vision</strong> and <strong>deep learning</strong>. 
-                    I am currently interested in <strong>3D vision</strong>, including 3D scene reconstruction, 3D gaussian splatting, and depth estimation. 
-                    I previously focused on 2D scene understanding, especially in scene parsing.
+                    My research interests involve <strong>computer vision</strong> and <strong>deep learning</strong>.<br>
+                    I am currently interested in <strong>MLLM</strong> and <strong>3D vision</strong>, including <strong>spatial reasoning</strong>, <strong>3D reconstruction</strong>, and <strong>3D gaussian splatting</strong>.<br>
+                    I have previously conducted some work in 2D scene understanding, especially in scene parsing.
                   </p>
                 </td>
               </tr>
@@ -59,7 +59,7 @@
               
             <tr onmouseout="drivingforward_stop()" onmouseover="drivingforward_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
+                <div class="one" style="align-items: center; height: 100%;">
                   <div class="two" id='drivingforward_video'><video  width=100% muted autoplay loop>
                   <source src="projects/drivingforward/static/videos/demo_vertical.mp4" type="video/mp4" height="100%" width=auto>
                   Your browser does not support the video tag.
@@ -100,6 +100,82 @@
               </td>
             </tr>
 
+            <tr onmouseout="fleg_stop()" onmouseover="fleg_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one" style="align-items: center; height: 100%;">
+                  <div class="two" id='fleg_video'><video  width=100% muted autoplay loop>
+                  <source src="projects/fleg/static/videos/demo_fast.mp4" type="video/mp4" height="100%" width=auto>
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/fleg.png' width=100%>
+                </div>
+                <script type="text/javascript">
+                  const video = document.getElementById('fleg_video_tag');
+
+                  function fleg_start() {
+                    document.getElementById('fleg_video').style.opacity = "1";
+                  }
+        
+                  function fleg_stop() {
+                    document.getElementById('fleg_video').style.opacity = "0";
+                  }
+                  fleg_stop()
+                </script>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://fangzhou2000.github.io/projects/fleg/">
+                  <span class="papertitle">FLEG: Feed-Forward Language Embedded Gaussian Splatting from Any Views</span>
+                </a>
+                <br>
+                
+                <strong>Qijian Tian</strong>,
+                <a href="https://tanxincs.github.io/">Xin Tan</a>,
+                <a>Jiayu Ying</a>,
+                <a>Xuhong Wang</a>,
+                <a href="https://scholar.google.com/citations?user=RN1QMPgAAAAJ&hl=zh-CN&oi=ao">Yuan Xie</a>,
+                <a href="https://dmcv.sjtu.edu.cn/people/">Lizhuang Ma</a>,
+                
+                <br>
+                <em>arxiv</em>, 2025
+                <br>
+                <a href="https://fangzhou2000.github.io/projects/fleg/">project page</a>
+                /
+                <a href="">arXiv</a>
+                <p></p>
+                <p>
+                A feed-forward network that effectively reconstructs language-embedded 3D Gaussians in a single feed-forward pass from uncalibrated and unposed images, supporting both sparse and dense views.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one" style="align-items: center; height: 100%;">
+                  <img src='images/danim.png' width=100%>
+                </div>
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://www.sciencedirect.com/science/article/pii/S0031320325014591">
+                  <span class="papertitle">DANIM: Domain Adaptation Network with Intermediate Domain Masking for Night-time Scene Parsing</span>
+                </a>
+                <br>
+                <strong>Qijian Tian</strong>,
+                <a>Sen Wang</a>,
+                <a herf="https://yiranran.github.io/">Ran Yi</a>,
+                <a>Zufeng Zhang</a>,
+                <a href="https://scholar.google.com/citations?user=QlGJBvkAAAAJ&hl=zh-CN&oi=ao">Bin Sheng</a>,
+                <a href="https://tanxincs.github.io/">Xin Tan</a>,
+                <a href="https://dmcv.sjtu.edu.cn/people/">Lizhuang Ma</a>
+                <br>
+                <em>Pattern Recognition</em>, 2025
+                <br>
+                <p></p>
+                <p>
+                  A novel domain adaptation network for night-time scene parsing that bridges the day-night domain gap using an intermediate domain.
+                </p>
+              </td>
+            </tr>
+
             <tr>
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one" style="align-items: center; height: 100%;">
@@ -107,7 +183,7 @@
                 </div>
               </td>
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://arxiv.org/pdf/2311.11525">
+                <a href="https://arxiv.org/abs/2311.11525">
                   <span class="papertitle">Generalized Category Discovery in Semantic Segmentation</span>
                 </a>
                 <br>
