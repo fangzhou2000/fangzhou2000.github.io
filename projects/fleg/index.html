@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="FLEG: Feed-Forward Language Embedded Gaussian Splatting from Any Views">
+        content="FLEG: Feed-Forward Language Embedded Gaussian Splatting from Any Views via Compact Semantic Representation">
   <meta name="keywords" content="FLEG">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FLEG: Feed-Forward Language Embedded Gaussian Splatting from Any Views</title>
+  <title>FLEG: Feed-Forward Language Embedded Gaussian Splatting from Any Views via Compact Semantic Representation</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -81,8 +81,8 @@
           <div class="container is-max-desktop">
             <div class="columns is-centered">
               <div class="column has-text-centered">
-                <h1 class="title is-1 publication-title">FLEG: Feed-Forward Language Embedded Gaussian Splatting from Any Views</h1>
-                
+                <h1 class="title is-1 publication-title">FLEG: Feed-Forward Language Embedded Gaussian Splatting from Any Views via Compact Semantic Representation</h1>
+
                 <div class="is-size-4 has-text-weight-bold" style="color: #000000;">arXiv 2025</div>
                 <br>
 
@@ -192,7 +192,7 @@
             <div class="column is-four-fifths">
               <h2 class="title is-3">Abstract</h2>
               <div class="content has-text-justified">
-                We present FLEG, a feed-forward network that reconstructs language-embedded 3D Gaussians from any views. Previous straightforward solutions combine feed-forward reconstruction with Gaussian heads but suffer from fixed input views and insufficient 3D training data. In contrast, we propose a 3D-annotation-free training framework for 2D-to-3D lifting from arbitrary uncalibrated and unposed multi-view images. Since the framework does not require 3D annotations, we can leverage large-scale video data with easily obtained 2D instance information to enrich semantic embedding. We also propose an instance-guided contrastive learning to align 2D semantics with the 3D representations. In addition, to mitigate the high memory and computational cost of dense views, we further propose a geometry-semantic hierarchical sparsification strategy. Our FLEG efficiently reconstructs language-embedded 3D Gaussian representation in a feed-forward manner from arbitrary sparse or dense views, jointly producing accurate geometry, high-fidelity appearance, and language-aligned semantics. Extensive experiments show that it outperforms existing methods on various related tasks.
+                We present FLEG, a feed-forward network that reconstructs language-embedded 3D Gaussians from arbitrary views. Previous feed-forward language-embedded Gaussian reconstruction methods are restricted to a fixed number of input views and typically attach a language-aligned semantic embedding to each Gaussian, resulting in impractical input settings and semantic redundancy. In contrast, we introduce a geometry-semantic dual-branch distillation framework that enables flexible input from arbitrary multi-view images without camera parameters. We also propose a novel-view-based distillation strategy during training that mitigates overfitting to input views. In addition, we observe that semantic representations are significantly sparser than geometric ones, and per-Gaussian language embedding is unnecessary. To exploit this sparsity, we design a decoupled language embedding strategy that represents language information with a sparse set of semantic Gaussians, rather than attaching embeddings to every Gaussian. Compared with dense pixel-aligned per-Gaussian embedding schemes, our method uses only 5% of the language embeddings while maintaining comparable semantic fidelity, effectively reducing storage costs. Extensive experiments demonstrate that FLEG outperforms state-of-the-art feed-forward reconstruction and language-embedded Gaussian methods in both reconstruction quality and language-aligned semantic representation.
               </div>
             </div>
           </div>
@@ -208,11 +208,7 @@
               <!-- Interpolating. -->
                 <div class="content has-text-justified">
                 <p>
-                    Overview of FLEG. Our FLEG adopts a large transformer with a DPT-based decoder and corresponding prediction heads to predict language-embedded Gaussians. 
-                    We propose a 3D-annotation-free training framework to eliminate the reliance on 3D annotation. 
-                    To embed semantics into 3D representations, we construct InstanceMV-14K to enrich semantic diversity. 
-                    We also introduce an instance-guided contrastive learning to effectively align 2D instances with 3D representations. 
-                    We further propose a geometry-semantic hierarchical sparsification strategy to avoid the cost of per-pixel predictions.
+                    Overview of FLEG. We propose a dual-branch distillation to train the network without 3D ground truth and semantic labels. We also propose a Decoupled Gaussian Language Embedding (DGLE) module that produces the compact semantic representation, which significantly reduces semantic redundancy and storage overhead.
                 </p>
                 <img src="./static/images/main.png" 
                      class="interpolation-image" 
@@ -232,9 +228,17 @@
             <!-- Interpolating. -->
             <div class="content has-text-justified">
               <p>
-                Comparsion with feed-forward methods: 
+                Novel view synthesis:
               </p>
-              <img src="./static/images/vis.png" 
+              <img src="./static/images/nvs_scannetppv2.png" 
+                   class="interpolation-image" 
+                   alt="Interpolate start reference image" 
+                   style="width: 80%; height: 100%; display: block; margin: 0 auto;">
+              <img src="./static/images/nvs_scannet.png" 
+                   class="interpolation-image" 
+                   alt="Interpolate start reference image" 
+                   style="width: 80%; height: 100%; display: block; margin: 0 auto;">
+              <img src="./static/images/nvs_replica.png" 
                    class="interpolation-image" 
                    alt="Interpolate start reference image" 
                    style="width: 80%; height: 100%; display: block; margin: 0 auto;">
@@ -242,9 +246,17 @@
                 <br>
               </p>
               <p>
-                Comparsion with per-scene optimized methods: 
+                Open-vocabulary query segmentation:
               </p>
-              <img src="./static/images/vis_per.png" 
+              <img src="./static/images/sem_scannetppv2.png" 
+                   class="interpolation-image" 
+                   alt="Interpolate start reference image" 
+                   style="width: 80%; height: 100%; display: block; margin: 0 auto;">
+              <img src="./static/images/sem_scannet.png" 
+                   class="interpolation-image" 
+                   alt="Interpolate start reference image" 
+                   style="width: 80%; height: 100%; display: block; margin: 0 auto;">
+              <img src="./static/images/sem_replica.png" 
                    class="interpolation-image" 
                    alt="Interpolate start reference image" 
                    style="width: 80%; height: 100%; display: block; margin: 0 auto;">
