@@ -82,6 +82,15 @@ p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
+  line-height: 1.6;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
 
 strong {
@@ -90,7 +99,7 @@ strong {
 }
 
 h2 {
-  margin: 0;
+  margin: 0 0 10px;
   font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 22px;
@@ -104,9 +113,33 @@ h2 {
 
 .name {
   padding-top: 20px;
-  margin: 0;
+  margin: 0 0 16px;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
+  text-align: center;
+}
+
+.links {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.announcement {
+  color: #d63031;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.pub-authors,
+.pub-venue,
+.pub-links {
+  display: block;
+  margin-top: 4px;
+}
+
+.pub-desc {
+  margin-top: 8px;
+  margin-bottom: 0;
 }
 
 .one {
