@@ -25,7 +25,9 @@
           </p>
           <p>
             Prior to starting my Ph.D., I received my Bachelor's degree in Computer Science from Beihang University (<a href="https://www.buaa.edu.cn/">BUAA</a>).
-            I also worked as an intern at <a href="https://github.com/PaddlePaddle/Paddle-Lite">Baidu</a>.
+          </p>
+          <p>
+            I also worked as an intern at <a href="https://www.shlab.org.cn/">Shanghai AI Laboratory</a> and <a href="https://github.com/PaddlePaddle/Paddle-Lite">Baidu</a>.
           </p>
           <p class="links">
             <a href="mailto:tianqijian@sjtu.edu.cn">Email</a> &nbsp;/&nbsp;
@@ -45,30 +47,141 @@
         <td style="padding:20px;width:100%;vertical-align:middle">
           <h2>Research</h2>
           <p>
-            My research interests involve <strong>multimodal large language models (MLLM)</strong> and <strong>3D vision</strong>.<br>
-            I am currently interested in <strong>MLLM post-training</strong>, <strong>agentic RL</strong>, and <strong>world models</strong>.<br>
+            My research interests involve <strong>multimodal large language models (MLLM / VLM)</strong> and <strong>3D vision</strong>.<br>
+            I am currently interested in <strong>VLM post-training</strong> and <strong>agentic RL</strong>.<br>
             I have previously conducted some work in 2D/3D scene understanding, especially in scene parsing and 3D Gaussian splatting.
           </p>
           <p class="announcement">
-            2026.08: I am currently looking for collaboration / internship opportunities related to MLLM. Feel free to contact me!
+            2026.10: I am looking for collaboration / internship opportunities related to VLM or agent. Feel free to contact me!
           </p>
         </td>
       </tr>
     </tbody></table>
 
-    <!-- Publications -->
+    <!-- Reports -->
     <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:auto;"><tbody>
-
-      <tr onmouseout="fleg_stop()" onmouseover="fleg_start()">
+      <tr>
+        <td colspan="2" style="padding:20px 20px 0;vertical-align:middle">
+          <h2>Report</h2>
+        </td>
+      </tr>
+      <tr class="paper-entry">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="align-items:center;height:100%;">
-            <div class="two" id="fleg_video">
-              <video width="100%" muted autoplay loop>
-                <source src="projects/fleg/static/videos/demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
+            <img src="images/towards.png" width="100%" alt="Evolution from trustworthy systems to trustworthy AI and safe and trustworthy embodied AI, from Figure 3 of the report" style="height:auto;" loading="lazy" decoding="async">
+          </div>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://ai45lab.github.io/Awesome-Trustworthy-Embodied-AI/">
+            <span class="papertitle">Towards Safe and Trustworthy Embodied AI: Foundations, Status, and Prospects</span>
+          </a>
+          <span class="pub-tags" aria-label="Research topics">
+            <span class="pub-tag">Embodied AI</span>
+            <span class="pub-tag">Safety</span>
+          </span>
+          <span class="pub-venue">Shanghai AI Laboratory<br><strong><em>Technical Report 2025</em></strong></span>
+          <span class="pub-links">
+            <a href="https://ai45lab.github.io/Awesome-Trustworthy-Embodied-AI/">project page</a> /
+            <a href="https://openreview.net/forum?id=Eu6Yt21Alv">openreview</a>
+          </span>
+          <p class="pub-desc">
+            A framework for safe and trustworthy embodied AI, defining five levels and ten core principles, analyzing risks across the agent's operational stages, and outlining a roadmap toward safety across the closed-loop interaction between agents and their environments.
+          </p>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <!-- Papers -->
+    <table class="papers-table" style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin:auto;"><tbody>
+      <tr>
+        <td colspan="2" style="padding:20px 20px 0;vertical-align:middle">
+          <h2>Paper</h2>
+        </td>
+      </tr>
+
+      <tr class="paper-entry">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one" style="align-items:center;height:100%;">
+            <img src="images/v2w_1.png" width="100%" alt="V2W overview, first panel" style="display:block;height:auto;" decoding="async">
+            <img src="images/v2w_2.png" width="100%" alt="V2W overview, second panel" style="display:block;height:auto;margin-top:8px;" decoding="async">
+          </div>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="projects/v2w/index.html">
+            <span class="papertitle">From Views to Worlds: Active Exploration over 3D Worlds for Vision-Language Models</span>
+          </a>
+          <span class="pub-tags" aria-label="Research topics">
+            <span class="pub-tag">VLM post-training</span>
+            <span class="pub-tag">Agentic RL</span>
+            <span class="pub-tag">Spatial Reasoning</span>
+          </span>
+          <span class="pub-authors">
+            <strong>Qijian Tian</strong>,
+            <a href="https://scholar.google.com/citations?&amp;user=wggW7sQAAAAJ">Jiayu Ying</a>,
+            <a href="https://vankouf.github.io/">Ke Fan</a>,
+            <a href="https://dmcv.sjtu.edu.cn/people/">Lizhuang Ma</a>,
+            <a href="https://tanxincs.github.io/">Xin Tan</a>
+          </span>
+          <span class="pub-venue"><strong><em>NeurIPS 2026</em></strong></span>
+          <span class="pub-links">
+            <a href="projects/v2w/index.html">project page</a> /
+            <a href="https://arxiv.org/abs/2610.24676">arXiv</a>
+          </span>
+          <p class="pub-desc">
+            An active exploration framework that enables VLMs to actively explore 3D worlds and lifts VLMs from passive view-centric perception to active world-centric spatial reasoning.
+          </p>
+        </td>
+      </tr>
+
+      <tr class="paper-entry">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one" style="align-items:center;height:100%;">
+            <img src="images/exemplar2vqa_1.png" width="100%" alt="Exemplar2VQA, first panel" style="display:block;height:auto;" loading="lazy" decoding="async">
+            <img src="images/exemplar2vqa_2.png" width="100%" alt="Exemplar2VQA, second panel" style="display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async">
+          </div>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2609.37655">
+            <span class="papertitle">Exemplar2VQA: A Scalable Exemplar-Driven Visual Question Answering Generation Framework via Multi-Agent Coding</span>
+          </a>
+          <span class="pub-tags" aria-label="Research topics">
+            <span class="pub-tag">VLM post-training</span>
+            <span class="pub-tag">Agentic Data Synthesis</span>
+            <span class="pub-tag">Spatial Reasoning</span>
+          </span>
+          <span class="pub-authors">
+            <a href="https://scholar.google.com/citations?&amp;user=wggW7sQAAAAJ">Jiayu Ying</a>,
+            <strong>Qijian Tian</strong>,
+            <a>Ruijie Xu</a>,
+            <a>Xinnan Zhu</a>,
+            <a>Daoguo Dong</a>,
+            <a>Jiachen Xu</a>,
+            <a href="https://tanxincs.github.io/">Xin Tan</a>
+          </span>
+          <span class="pub-venue"><strong><em>NeurIPS 2026</em></strong></span>
+          <span class="pub-links">
+            <a href="https://github.com/yingjiayu12/Exemplar2VQA">project page</a> /
+            <a href="https://arxiv.org/abs/2609.37655">arXiv</a>
+          </span>
+          <p class="pub-desc">
+            An exemplar-driven framework that uses collaborative coding agents and geometric utilities to generate spatial question-answer pairs at scale in simulated 3D environments, improving VLMs' spatial reasoning through synthetic training data.
+          </p>
+        </td>
+      </tr>
+
+      <tr class="paper-entry" onmouseenter="fleg_start()" onmouseleave="fleg_stop()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one" style="align-items:center;height:100%;">
+            <div style="position:relative;">
+              <div class="two" id="fleg_video" style="inset:0;width:100%;height:100%;pointer-events:none;background:white;">
+                <video width="100%" muted autoplay loop playsinline style="display:block;height:100%;object-fit:contain;">
+                  <source src="projects/fleg/static/videos/demo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <img src="images/fleg_1.png" width="100%" alt="FLEG, first panel" style="display:block;height:auto;" loading="lazy" decoding="async">
             </div>
-            <img src="images/fleg.png" width="100%">
+            <img src="images/fleg_2.png" width="100%" alt="FLEG, second panel" style="display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async">
           </div>
           <script type="text/javascript">
             function fleg_start() {
@@ -84,6 +197,11 @@
           <a href="https://fangzhou2000.github.io/projects/fleg/">
             <span class="papertitle">FLEG: Feed-Forward Language Embedded Gaussian Splatting from Any Views via Compact Semantic Representation</span>
           </a>
+          <span class="pub-tags" aria-label="Research topics">
+            <span class="pub-tag">3D Vision</span>
+            <span class="pub-tag">Open-Vocabulary Understanding</span>
+            <span class="pub-tag">Multi-view Input</span>
+          </span>
           <span class="pub-authors">
             <strong>Qijian Tian</strong>,
             <a href="https://tanxincs.github.io/">Xin Tan</a>,
@@ -103,16 +221,21 @@
         </td>
       </tr>
 
-      <tr>
+      <tr class="paper-entry">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="align-items:center;height:100%;">
-            <img src="images/s2d.png" width="100%">
+            <img src="images/s2d_1.png" width="100%" alt="S2D, first panel" style="display:block;height:auto;" loading="lazy" decoding="async">
+            <img src="images/s2d_2.png" width="100%" alt="S2D, second panel" style="display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async">
           </div>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
           <a href="https://george-attano.github.io/S2D/">
             <span class="papertitle">S2D: Sparse to Dense Lifting for 3D Reconstruction with Minimal Inputs</span>
           </a>
+          <span class="pub-tags" aria-label="Research topics">
+            <span class="pub-tag">3D Vision</span>
+            <span class="pub-tag">One-Step Diffusion</span>
+          </span>
           <span class="pub-authors">
             <a href="https://george-attano.github.io/">Yuzhou Ji</a>,
             <strong>Qijian Tian</strong>,
@@ -134,11 +257,11 @@
         </td>
       </tr>
 
-      <tr onmouseout="drivingforward_stop()" onmouseover="drivingforward_start()">
+      <tr class="paper-entry" onmouseleave="drivingforward_stop()" onmouseenter="drivingforward_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="align-items:center;height:100%;">
             <div class="two" id="drivingforward_video">
-              <video width="100%" muted autoplay loop>
+              <video width="100%" muted autoplay loop playsinline>
                 <source src="projects/drivingforward/static/videos/demo_vertical.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
@@ -159,6 +282,11 @@
           <a href="https://fangzhou2000.github.io/projects/drivingforward/">
             <span class="papertitle">DrivingForward: Feed-forward 3D Gaussian Splatting for Driving Scene Reconstruction from Flexible Surround-view Input</span>
           </a>
+          <span class="pub-tags" aria-label="Research topics">
+            <span class="pub-tag">3D Vision</span>
+            <span class="pub-tag">Driving Scene</span>
+            <span class="pub-tag">Depth Estimation</span>
+          </span>
           <span class="pub-authors">
             <strong>Qijian Tian</strong>,
             <a href="https://tanxincs.github.io/">Xin Tan</a>,
@@ -176,16 +304,21 @@
         </td>
       </tr>
 
-      <tr>
+      <tr class="paper-entry">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="align-items:center;height:100%;">
-            <img src="images/danim.png" width="100%">
+            <img src="images/danim_1.png" width="100%" alt="DANIM, first panel" style="display:block;height:auto;" loading="lazy" decoding="async">
+            <img src="images/danim_2.png" width="100%" alt="DANIM, second panel" style="display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async">
           </div>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
           <a href="https://www.sciencedirect.com/science/article/pii/S0031320325014591">
             <span class="papertitle">DANIM: Domain Adaptation Network with Intermediate Domain Masking for Night-time Scene Parsing</span>
           </a>
+          <span class="pub-tags" aria-label="Research topics">
+            <span class="pub-tag">Domain Adaptation</span>
+            <span class="pub-tag">Scene Parsing</span>
+          </span>
           <span class="pub-authors">
             <strong>Qijian Tian</strong>,
             <a>Sen Wang</a>,
@@ -195,14 +328,147 @@
             <a href="https://tanxincs.github.io/">Xin Tan</a>,
             <a href="https://dmcv.sjtu.edu.cn/people/">Lizhuang Ma</a>
           </span>
-          <span class="pub-venue"><em>Pattern Recognition 2025</em></span>
+          <span class="pub-venue"><strong><em>Pattern Recognition 2026</em></strong></span>
           <p class="pub-desc">
             A novel domain adaptation network for night-time scene parsing that bridges the day-night domain gap using an intermediate domain.
           </p>
         </td>
       </tr>
 
-      <tr>
+      <tr class="paper-entry">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one" style="align-items:center;height:100%;">
+            <img src="images/uniforward_1.png" width="100%" alt="UniForward, first panel" style="display:block;height:auto;" loading="lazy" decoding="async">
+            <img src="images/uniforward_2.png" width="100%" alt="UniForward, second panel" style="display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async">
+          </div>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2506.09378">
+            <span class="papertitle">UniForward: Unified 3D Scene and Semantic Field Reconstruction via Feed-Forward Gaussian Splatting from Only Sparse-View Images</span>
+          </a>
+          <span class="pub-tags" aria-label="Research topics">
+            <span class="pub-tag">3D Vision</span>
+            <span class="pub-tag">Open-Vocabulary Understanding</span>
+          </span>
+          <span class="pub-authors">
+            <strong>Qijian Tian</strong>,
+            <a href="https://tanxincs.github.io/">Xin Tan</a>,
+            <a>Jingyu Gong</a>,
+            <a href="https://scholar.google.com/citations?user=RN1QMPgAAAAJ&amp;hl=zh-CN&amp;oi=ao">Yuan Xie</a>,
+            <a href="https://dmcv.sjtu.edu.cn/people/">Lizhuang Ma</a>
+          </span>
+          <span class="pub-venue"><strong><em>Virtual Reality &amp; Intelligent Hardware 2026</em></strong></span>
+          <span class="pub-links">
+            <a href="https://arxiv.org/abs/2506.09378">arXiv</a>
+          </span>
+          <p class="pub-desc">
+            A feed-forward Gaussian splatting model that jointly reconstructs 3D scenes and semantic fields from sparse, uncalibrated and unposed images, enabling real-time rendering and open-vocabulary segmentation.
+          </p>
+        </td>
+      </tr>
+
+      <tr class="paper-entry">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one" style="align-items:center;height:100%;">
+            <img src="images/gama_1.png" width="100%" alt="Multimodal place recognition, first panel" style="display:block;height:auto;" loading="lazy" decoding="async">
+            <img src="images/gama_2.png" width="100%" alt="Multimodal place recognition, second panel" style="display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async">
+          </div>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://ieeexplore.ieee.org/abstract/document/11563912/">
+            <span class="papertitle">Multimodal Place Recognition With Feed-Forward Gaussian and Mamba-Based Enhancement in Mixed Traffic Environments</span>
+          </a>
+          <span class="pub-tags" aria-label="Research topics">
+            <span class="pub-tag">Place Recognition</span>
+            <span class="pub-tag">3D Vision</span>
+          </span>
+          <span class="pub-authors">
+            <a>Jingyi Xu</a>,
+            <a>Zhangshuo Qi</a>,
+            <a>Xianyun Jiao</a>,
+            <strong>Qijian Tian</strong>,
+            <a>Zhongmiao Yan</a>,
+            <a>Qi Wu</a>,
+            <a href="https://chen-xieyuanli.github.io/">Xieyuanli Chen</a>,
+            <a>Ling Pei</a>
+          </span>
+          <span class="pub-venue"><strong><em>IEEE Transactions on Intelligent Transportation Systems 2026</em></strong></span>
+          <p class="pub-desc">
+            A multimodal place recognition framework that combines feed-forward Gaussian representations with Mamba-based enhancement for mixed traffic environments.
+          </p>
+        </td>
+      </tr>
+
+      <tr class="paper-entry">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one" style="align-items:center;height:100%;">
+            <img src="images/groupforward_1.png" width="100%" alt="GroupForward, first panel" style="display:block;height:auto;" loading="lazy" decoding="async">
+            <img src="images/groupforward_2.png" width="100%" alt="GroupForward, second panel" style="display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async">
+          </div>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2608.17535">
+            <span class="papertitle">GroupForward: Building Referable 3D Scenes via Instance-Grouped Feed-Forward Gaussian Splatting</span>
+          </a>
+          <span class="pub-tags" aria-label="Research topics">
+            <span class="pub-tag">3D Vision</span>
+            <span class="pub-tag">Instance-level Understanding</span>
+            <span class="pub-tag">Referring Segmentation</span>
+          </span>
+          <span class="pub-authors">
+            <strong>Qijian Tian</strong>,
+            <a>Zimeng Wu</a>,
+            <a href="https://wangxuhongcn.github.io/">Xuhong Wang</a>,
+            <a href="https://dmcv.sjtu.edu.cn/people/">Lizhuang Ma</a>,
+            <a href="https://tanxincs.github.io/">Xin Tan</a>
+          </span>
+          <span class="pub-venue"><em>arXiv 2026</em></span>
+          <span class="pub-links">
+            <a href="https://arxiv.org/abs/2608.17535">arXiv</a>
+          </span>
+          <p class="pub-desc">
+            A feed-forward Gaussian splatting model that reconstructs instance-grouped 3D scenes from sparse, unposed images and supports complex referring segmentation through scene graphs and VLM-based reasoning.
+          </p>
+        </td>
+      </tr>
+
+      <tr class="paper-entry">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one" style="align-items:center;height:100%;">
+            <img src="images/dailyart_1.png" width="100%" alt="DailyArt, first panel" style="display:block;height:auto;" loading="lazy" decoding="async">
+            <img src="images/dailyart_2.png" width="100%" alt="DailyArt, second panel" style="display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async">
+          </div>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="https://rangooo123.github.io/DaliyArt.github.io/">
+            <span class="papertitle">DailyArt: Discovering Articulation from Single Static Images via Latent Dynamics</span>
+          </a>
+          <span class="pub-tags" aria-label="Research topics">
+            <span class="pub-tag">3D Vision</span>
+            <span class="pub-tag">Image Generation</span>
+            <span class="pub-tag">Articulated Objects</span>
+          </span>
+          <span class="pub-authors">
+            <a>Hang Zhang</a>,
+            <strong>Qijian Tian</strong>,
+            <a>Jingyu Gong</a>,
+            <a>Daoguo Dong</a>,
+            <a href="https://wangxuhongcn.github.io/">Xuhong Wang</a>,
+            <a href="https://scholar.google.com/citations?user=RN1QMPgAAAAJ&amp;hl=zh-CN&amp;oi=ao">Yuan Xie</a>,
+            <a href="https://tanxincs.github.io/">Xin Tan</a>
+          </span>
+          <span class="pub-venue"><em>arXiv 2026</em></span>
+          <span class="pub-links">
+            <a href="https://rangooo123.github.io/DaliyArt.github.io/">project page</a> /
+            <a href="https://arxiv.org/abs/2604.07758">arXiv</a>
+          </span>
+          <p class="pub-desc">
+            A framework that reveals hidden articulation cues by synthesizing an opened state from a single static image, enabling joint estimation and part-level novel state synthesis.
+          </p>
+        </td>
+      </tr>
+
+      <tr class="paper-entry">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="align-items:center;height:100%;">
             <img src="images/gcdss.png" width="100%">
@@ -212,6 +478,10 @@
           <a href="https://arxiv.org/abs/2311.11525">
             <span class="papertitle">Generalized Category Discovery in Semantic Segmentation</span>
           </a>
+          <span class="pub-tags" aria-label="Research topics">
+            <span class="pub-tag">Scene Parsing</span>
+            <span class="pub-tag">Semantic Segmentation</span>
+          </span>
           <span class="pub-authors">
             <a>Zhengyuan Peng*</a>,
             <strong>Qijian Tian*</strong>,
@@ -227,8 +497,7 @@
             <a href="https://arxiv.org/pdf/2311.11525">arXiv</a>
           </span>
           <p class="pub-desc">
-            A novel setting called Generalized Category Discovery in Semantic Segmentation (GCDSS). Given prior knowledge from a labeled
-            set of base classes, our method aims to segment unlabeled images that contain pixels of the base class or novel class.
+            A new task setting, Generalized Category Discovery in Semantic Segmentation (GCDSS), aims to discover and segment base and novel categories using labeled base-class data.
           </p>
         </td>
       </tr>

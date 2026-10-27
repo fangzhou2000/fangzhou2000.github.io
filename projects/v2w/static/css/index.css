@@ -1,0 +1,18 @@
+.publication-conference {
+  color: #8b0000;
+}
+
+.project-figure {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.case-figure { width: 90%; }
+.content .case-heading { margin-top: 3rem; }
+
+@media screen and (max-width: 768px) {
+  .publication-title { font-size: 2rem !important; }
+  .case-figure { width: 100%; }
+}

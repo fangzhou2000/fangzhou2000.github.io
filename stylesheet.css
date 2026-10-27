@@ -166,3 +166,32 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+.paper-entry {
+  transition: background-color .18s ease;
+}
+
+.paper-entry:hover {
+  background-color: #fffbea;
+}
+
+.papers-table .paper-entry + .paper-entry > td {
+  border-top: 1px dashed #e5e5e5;
+}
+
+.pub-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 6px;
+}
+
+.pub-tag {
+  padding: 0 8px;
+  border: 1px solid #d1d9e0;
+  color: #59636e;
+  border-radius: 20px;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+}

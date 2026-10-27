@@ -1,9 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="description" content="From Views to Worlds: Active Exploration over 3D Worlds for Vision-Language Models. NeurIPS 2026.">
+  <meta name="keywords" content="V2W, View-to-World, vision-language models, spatial reasoning, active exploration">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Coming Soon</title>
+  <title>From Views to Worlds: Active Exploration over 3D Worlds for Vision-Language Models</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro&amp;display=swap" rel="stylesheet"></noscript>
+  <link rel="stylesheet" href="../fleg/static/css/bulma.min.css">
+  <link rel="stylesheet" href="../fleg/static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"></noscript>
+  <link rel="stylesheet" href="../fleg/static/css/index.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="../navbar.css">
+  <script defer src="../fleg/static/js/fontawesome.all.min.js"></script>
+  <script defer src="../navbar.js"></script>
 </head>
-<body></body>
+<body>
+  <project-navbar></project-navbar>
+
+  <main>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">From Views to Worlds: Active Exploration over 3D Worlds for Vision-Language Models</h1>
+              <div class="is-size-4 has-text-weight-bold publication-conference">NeurIPS 2026</div>
+              <br>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><a href="https://fangzhou2000.github.io/">Qijian Tian</a><sup>1</sup>,</span>
+                <span class="author-block"><a href="https://scholar.google.com/citations?&amp;user=wggW7sQAAAAJ">Jiayu Ying</a><sup>2</sup>,</span>
+                <span class="author-block"><a href="https://vankouf.github.io/">Ke Fan</a><sup>1</sup>,</span>
+                <span class="author-block"><a href="https://dmcv.sjtu.edu.cn/people/">Lizhuang Ma</a><sup>1</sup>,</span>
+                <span class="author-block"><a href="https://tanxincs.github.io/">Xin Tan</a><sup>2</sup></span>
+              </div>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"><sup>1</sup>Shanghai Jiao Tong University</span><br>
+                <span class="author-block"><sup>2</sup>East China Normal University</span>
+              </div>
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <span class="link-block">
+                    <a href="https://arxiv.org/abs/2610.24676" class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon"><i class="ai ai-arxiv" aria-hidden="true"></i></span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero teaser" aria-label="V2W teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img id="teaser" class="project-figure" src="./static/images/teaser.png" width="1616" height="797" alt="Comparison of passive view-centric perception and active world-centric spatial reasoning">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="abstract">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>Vision-language models (VLMs) have achieved remarkable progress in 2D visual understanding tasks, yet the passive view-centric perception paradigm limits their capacity for 3D spatial reasoning. Such reasoning often requires actively acquiring spatial evidence beyond the currently visible views, such as camera poses and cross-view spatial relationships, to infer 3D relationships that are not explicitly represented in 2D images. However, existing methods either lack active exploration or merely provide additional views during inference, without explicitly acquiring such spatial evidence beyond 2D images. In this paper, we propose View-to-World (V2W), an active exploration framework that enables VLMs to actively explore 3D worlds and lifts VLMs from passive view-centric perception to active world-centric spatial reasoning. Given a spatial reasoning task with multi-view images, V2W first reconstructs an explicit 3D world with geometry, camera poses, and language-grounded semantics, and exposes it to VLMs through visual and linguistic interfaces. Through multi-turn interaction with these interfaces, VLMs iteratively acquire spatial evidence from the constructed 3D world, enabling active world-centric spatial reasoning. V2W can be integrated with existing VLMs in a training-free manner and can be further enhanced by optimizing the exploration policy via reinforcement learning. Experiments on spatial mental modeling benchmarks demonstrate that V2W substantially improves VLM baselines in the training-free setting and achieves state-of-the-art performance with the learned exploration policy, highlighting the importance of active exploration for spatial intelligence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="method">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Method</h2>
+            <div class="content has-text-justified">
+              <p>Overview of the View-to-World (V2W) framework. V2W constructs a VLM-compatible 3D world from multi-view images. The 3D information is exposed through visual and linguistic interfaces, enabling the VLM to actively explore the world via multi-turn interaction, and the exploration policy can be further optimized via reinforcement learning.</p>
+              <img class="project-figure" src="./static/images/main.png" width="1910" height="768" loading="lazy" alt="Overview of the View-to-World (V2W) framework. V2W constructs a VLM-compatible 3D world from multi-view images. The 3D information is exposed through visual and linguistic interfaces, enabling the VLM to actively explore the world via multi-turn interaction, and the exploration policy can be further optimized via reinforcement learning.">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="case">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Case</h2>
+            <div class="content has-text-justified">
+              <h3 class="title is-4">Training-free Exploration</h3>
+              <p>Existing VLMs acquire spatial evidence through active exploration without additional training.</p>
+              <img class="project-figure case-figure" src="./static/images/case_free.png" width="1693" height="1904" loading="lazy" alt="Additional qualitative results on MindCube-Tiny of training-free V2W with different base models.">
+              <h3 class="title is-4 case-heading">Learned Exploration Policy</h3>
+              <p>Reinforcement learning enhances the VLM’s active exploration capability, enabling more effective multi-step exploration and aggregation of spatial evidence.</p>
+              <img class="project-figure case-figure" src="./static/images/case_training.png" width="1697" height="1864" loading="lazy" alt="Additional qualitative results on MindCube-Tiny and SAT-val of training-based V2W.">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@article{tian2026views,
+  title={From Views to Worlds: Active Exploration over 3D Worlds for Vision-Language Models},
+  author={Tian, Qijian and Ying, Jiayu and Fan, Ke and Ma, Lizhuang and Tan, Xin},
+  journal={arXiv preprint arXiv:2610.24676},
+  year={2026}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="https://arxiv.org/pdf/2610.24676" aria-label="Read the paper"><i class="fas fa-file-pdf" aria-hidden="true"></i></a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>This website is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+            <p>The website template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
