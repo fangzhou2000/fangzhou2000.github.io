@@ -32,9 +32,10 @@
   <link rel="stylesheet" href="./static/css/index.css">
   <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
 
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script async src="./static/js/fontawesome.all.min.js"></script>
   <link rel="stylesheet" href="../navbar.css">
   <script defer src="../navbar.js"></script>
+  <script defer src="../media.js"></script>
 </head>
 
 <body>
@@ -142,8 +143,8 @@
         <div class="container is-max-desktop">
         <!-- <div class="container is-fluid" style="width: 90%;"> -->
           <div class="hero-body">
-            <video id="teaser" autoplay muted loop playsinline height="100%">
-              <source src="./static/videos/demo.mp4"
+            <video id="teaser" data-lazy-video muted loop playsinline controls preload="none" poster="./static/images/video-poster.png" style="display:block;width:100%;height:auto;aspect-ratio:3940/1080;">
+              <source data-src="./static/videos/demo.mp4"
                       type="video/mp4">
             </video>
             <h2 class="subtitle has-text-centered" style="margin-top: 10px;">
@@ -187,7 +188,7 @@
                 <img loading="lazy" decoding="async" src="./static/images/main.png"
                      class="interpolation-image" 
                      alt="Interpolate start reference image" 
-                     style="width: 100%; height: auto; display: block; margin: 0 auto;">
+                     style="width:100%;width: 100%; height: auto; display: block; margin: 0 auto;" width="12948" height="5087">
             </div>
           </div>
         </div>
@@ -205,14 +206,14 @@
               <img loading="lazy" decoding="async" src="./static/images/supp_full_vis.png"
                    class="interpolation-image" 
                    alt="Interpolate start reference image" 
-                   style="width: 80%; height: 100%; display: block; margin: 0 auto;">
+                   style="width:100%;width: 80%; height: auto; display: block; margin: 0 auto;" width="1140" height="1148">
               <p> 
                 <br>
               </p>
               <img loading="lazy" decoding="async" src="./static/images/supp_more_vis.png"
                    class="interpolation-image" 
                    alt="Interpolate start reference image" 
-                   style="width: 80%; height: 100%; display: block; margin: 0 auto;">
+                   style="width:100%;width: 80%; height: auto; display: block; margin: 0 auto;" width="1182" height="1184">
             </div>
           </div>
         </div>

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script defer src="projects/media.js"></script>
 </head>
 
 <body>
@@ -36,7 +37,7 @@
           </p>
         </td>
         <td style="padding:2.5%;width:40%;max-width:40%">
-          <img style="width:100%;max-width:100%;object-fit:cover;border-radius:50%;" alt="profile photo" src="images/tianqijian.png" class="hoverZoomLink">
+          <img style="width:100%;max-width:100%;object-fit:cover;border-radius:50%;" alt="profile photo" fetchpriority="high" decoding="async" src="images/tianqijian.png" class="hoverZoomLink">
         </td>
       </tr>
     </tbody></table>
@@ -68,7 +69,7 @@
       <tr class="paper-entry">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="align-items:center;height:100%;">
-            <img src="images/towards.png" width="100%" alt="Evolution from trustworthy systems to trustworthy AI and safe and trustworthy embodied AI, from Figure 3 of the report" style="height:auto;" loading="lazy" decoding="async">
+            <img src="images/towards.png" alt="Evolution from trustworthy systems to trustworthy AI and safe and trustworthy embodied AI, from Figure 3 of the report" style="width:100%;height:auto;" loading="lazy" decoding="async" width="885" height="590">
           </div>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
@@ -102,8 +103,8 @@
       <tr class="paper-entry">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="align-items:center;height:100%;">
-            <img src="images/v2w_1.png" width="100%" alt="V2W overview, first panel" style="display:block;height:auto;" decoding="async">
-            <img src="images/v2w_2.png" width="100%" alt="V2W overview, second panel" style="display:block;height:auto;margin-top:8px;" decoding="async">
+            <img src="images/v2w_1.png" alt="V2W overview, first panel" style="width:100%;display:block;height:auto;" decoding="async" width="960" height="473" loading="lazy">
+            <img src="images/v2w_2.png" alt="V2W overview, second panel" style="width:100%;display:block;height:auto;margin-top:8px;" decoding="async" width="960" height="386" loading="lazy">
           </div>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
@@ -136,8 +137,8 @@
       <tr class="paper-entry">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="align-items:center;height:100%;">
-            <img src="images/exemplar2vqa_1.png" width="100%" alt="Exemplar2VQA, first panel" style="display:block;height:auto;" loading="lazy" decoding="async">
-            <img src="images/exemplar2vqa_2.png" width="100%" alt="Exemplar2VQA, second panel" style="display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async">
+            <img src="images/exemplar2vqa_1.png" alt="Exemplar2VQA, first panel" style="width:100%;display:block;height:auto;" loading="lazy" decoding="async" width="960" height="461">
+            <img src="images/exemplar2vqa_2.png" alt="Exemplar2VQA, second panel" style="width:100%;display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async" width="960" height="474">
           </div>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
@@ -169,29 +170,20 @@
         </td>
       </tr>
 
-      <tr class="paper-entry" onmouseenter="fleg_start()" onmouseleave="fleg_stop()">
+      <tr class="paper-entry" data-hover-video="fleg_video">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="align-items:center;height:100%;">
             <div style="position:relative;">
-              <div class="two" id="fleg_video" style="inset:0;width:100%;height:100%;pointer-events:none;background:white;">
-                <video width="100%" muted autoplay loop playsinline style="display:block;height:100%;object-fit:contain;">
-                  <source src="projects/fleg/static/videos/demo.mp4" type="video/mp4">
+              <div class="two" id="fleg_video" style="inset:0;width:100%;height:100%;pointer-events:none;background:white;opacity:0;">
+                <video width="100%" muted loop playsinline preload="none" style="display:block;height:100%;object-fit:contain;">
+                  <source data-src="projects/fleg/static/videos/demo.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
               </div>
-              <img src="images/fleg_1.png" width="100%" alt="FLEG, first panel" style="display:block;height:auto;" loading="lazy" decoding="async">
+              <img src="images/fleg_1.png" alt="FLEG, first panel" style="width:100%;display:block;height:auto;" loading="lazy" decoding="async" width="960" height="517">
             </div>
-            <img src="images/fleg_2.png" width="100%" alt="FLEG, second panel" style="display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async">
+            <img src="images/fleg_2.png" alt="FLEG, second panel" style="width:100%;display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async" width="960" height="321">
           </div>
-          <script type="text/javascript">
-            function fleg_start() {
-              document.getElementById('fleg_video').style.opacity = "1";
-            }
-            function fleg_stop() {
-              document.getElementById('fleg_video').style.opacity = "0";
-            }
-            fleg_stop()
-          </script>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
           <a href="https://fangzhou2000.github.io/projects/fleg/">
@@ -224,8 +216,8 @@
       <tr class="paper-entry">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="align-items:center;height:100%;">
-            <img src="images/s2d_1.png" width="100%" alt="S2D, first panel" style="display:block;height:auto;" loading="lazy" decoding="async">
-            <img src="images/s2d_2.png" width="100%" alt="S2D, second panel" style="display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async">
+            <img src="images/s2d_1.png" alt="S2D, first panel" style="width:100%;display:block;height:auto;" loading="lazy" decoding="async" width="960" height="426">
+            <img src="images/s2d_2.png" alt="S2D, second panel" style="width:100%;display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async" width="960" height="583">
           </div>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
@@ -257,26 +249,17 @@
         </td>
       </tr>
 
-      <tr class="paper-entry" onmouseleave="drivingforward_stop()" onmouseenter="drivingforward_start()">
+      <tr class="paper-entry" data-hover-video="drivingforward_video">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="align-items:center;height:100%;">
-            <div class="two" id="drivingforward_video">
-              <video width="100%" muted autoplay loop playsinline>
-                <source src="projects/drivingforward/static/videos/demo_vertical.mp4" type="video/mp4">
+            <div class="two" id="drivingforward_video" style="opacity:0;pointer-events:none;">
+              <video width="100%" muted loop playsinline preload="none">
+                <source data-src="projects/drivingforward/static/videos/demo_vertical.mp4" type="video/mp4">
                 Your browser does not support the video tag.
               </video>
             </div>
-            <img src="images/drivingforward.png" width="100%">
+            <img src="images/drivingforward.png" width="853" height="960" style="width:100%;height:auto;" loading="lazy" decoding="async">
           </div>
-          <script type="text/javascript">
-            function drivingforward_start() {
-              document.getElementById('drivingforward_video').style.opacity = "1";
-            }
-            function drivingforward_stop() {
-              document.getElementById('drivingforward_video').style.opacity = "0";
-            }
-            drivingforward_stop()
-          </script>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
           <a href="https://fangzhou2000.github.io/projects/drivingforward/">
@@ -307,8 +290,8 @@
       <tr class="paper-entry">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="align-items:center;height:100%;">
-            <img src="images/danim_1.png" width="100%" alt="DANIM, first panel" style="display:block;height:auto;" loading="lazy" decoding="async">
-            <img src="images/danim_2.png" width="100%" alt="DANIM, second panel" style="display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async">
+            <img src="images/danim_1.png" alt="DANIM, first panel" style="width:100%;display:block;height:auto;" loading="lazy" decoding="async" width="884" height="363">
+            <img src="images/danim_2.png" alt="DANIM, second panel" style="width:100%;display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async" width="960" height="486">
           </div>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
@@ -338,8 +321,8 @@
       <tr class="paper-entry">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="align-items:center;height:100%;">
-            <img src="images/uniforward_1.png" width="100%" alt="UniForward, first panel" style="display:block;height:auto;" loading="lazy" decoding="async">
-            <img src="images/uniforward_2.png" width="100%" alt="UniForward, second panel" style="display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async">
+            <img src="images/uniforward_1.png" alt="UniForward, first panel" style="width:100%;display:block;height:auto;" loading="lazy" decoding="async" width="960" height="391">
+            <img src="images/uniforward_2.png" alt="UniForward, second panel" style="width:100%;display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async" width="960" height="447">
           </div>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
@@ -370,8 +353,8 @@
       <tr class="paper-entry">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="align-items:center;height:100%;">
-            <img src="images/gama_1.png" width="100%" alt="Multimodal place recognition, first panel" style="display:block;height:auto;" loading="lazy" decoding="async">
-            <img src="images/gama_2.png" width="100%" alt="Multimodal place recognition, second panel" style="display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async">
+            <img src="images/gama_1.png" alt="Multimodal place recognition, first panel" style="width:100%;display:block;height:auto;" loading="lazy" decoding="async" width="960" height="470">
+            <img src="images/gama_2.png" alt="Multimodal place recognition, second panel" style="width:100%;display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async" width="960" height="495">
           </div>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
@@ -402,8 +385,8 @@
       <tr class="paper-entry">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="align-items:center;height:100%;">
-            <img src="images/groupforward_1.png" width="100%" alt="GroupForward, first panel" style="display:block;height:auto;" loading="lazy" decoding="async">
-            <img src="images/groupforward_2.png" width="100%" alt="GroupForward, second panel" style="display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async">
+            <img src="images/groupforward_1.png" alt="GroupForward, first panel" style="width:100%;display:block;height:auto;" loading="lazy" decoding="async" width="960" height="462">
+            <img src="images/groupforward_2.png" alt="GroupForward, second panel" style="width:100%;display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async" width="960" height="434">
           </div>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
@@ -435,8 +418,8 @@
       <tr class="paper-entry">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="align-items:center;height:100%;">
-            <img src="images/dailyart_1.png" width="100%" alt="DailyArt, first panel" style="display:block;height:auto;" loading="lazy" decoding="async">
-            <img src="images/dailyart_2.png" width="100%" alt="DailyArt, second panel" style="display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async">
+            <img src="images/dailyart_1.png" alt="DailyArt, first panel" style="width:100%;display:block;height:auto;" loading="lazy" decoding="async" width="960" height="521">
+            <img src="images/dailyart_2.png" alt="DailyArt, second panel" style="width:100%;display:block;height:auto;margin-top:8px;" loading="lazy" decoding="async" width="960" height="397">
           </div>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
@@ -471,7 +454,7 @@
       <tr class="paper-entry">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="align-items:center;height:100%;">
-            <img src="images/gcdss.png" width="100%">
+            <img src="images/gcdss.png" width="960" height="838" style="width:100%;height:auto;" loading="lazy" decoding="async">
           </div>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">
@@ -505,7 +488,7 @@
       <tr class="paper-entry">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one" style="align-items:center;height:100%;">
-            <img src="images/libepidemic.png" width="100%" alt="LibEpidemic framework for infectious disease modeling" style="display:block;height:auto;" loading="lazy" decoding="async">
+            <img src="images/libepidemic.png" alt="LibEpidemic framework for infectious disease modeling" style="width:100%;display:block;height:auto;" loading="lazy" decoding="async" width="960" height="349">
           </div>
         </td>
         <td style="padding:20px;width:75%;vertical-align:middle">

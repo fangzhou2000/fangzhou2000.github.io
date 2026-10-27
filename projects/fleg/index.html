@@ -32,9 +32,10 @@
   <link rel="stylesheet" href="./static/css/index.css">
   <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
 
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script async src="./static/js/fontawesome.all.min.js"></script>
   <link rel="stylesheet" href="../navbar.css">
   <script defer src="../navbar.js"></script>
+  <script defer src="../media.js"></script>
 </head>
 
 <body>
@@ -141,8 +142,8 @@
         <div class="container is-max-desktop">
         <!-- <div class="container is-fluid" style="width: 90%;"> -->
           <div class="hero-body">
-            <video id="teaser" autoplay muted loop playsinline height="100%">
-              <source src="./static/videos/demo.mp4"
+            <video id="teaser" data-lazy-video muted loop playsinline controls preload="none" poster="./static/images/video-poster.png" style="display:block;width:100%;height:auto;aspect-ratio:16/9;">
+              <source data-src="./static/videos/demo.mp4"
                       type="video/mp4">
             </video>
           </div>
@@ -177,7 +178,7 @@
                 <img loading="lazy" decoding="async" src="./static/images/main.png"
                      class="interpolation-image" 
                      alt="Interpolate start reference image" 
-                     style="width: 100%; height: auto; display: block; margin: 0 auto;">
+                     style="width:100%;width: 100%; height: auto; display: block; margin: 0 auto;" width="9181" height="3109">
             </div>
           </div>
         </div>
@@ -198,15 +199,15 @@
               <img loading="lazy" decoding="async" src="./static/images/nvs_scannetppv2.png"
                    class="interpolation-image" 
                    alt="Interpolate start reference image" 
-                   style="width: 80%; height: 100%; display: block; margin: 0 auto;">
+                   style="width:100%;width: 80%; height: auto; display: block; margin: 0 auto;" width="3288" height="2638">
               <img loading="lazy" decoding="async" src="./static/images/nvs_scannet.png"
                    class="interpolation-image" 
                    alt="Interpolate start reference image" 
-                   style="width: 80%; height: 100%; display: block; margin: 0 auto;">
+                   style="width:100%;width: 80%; height: auto; display: block; margin: 0 auto;" width="3285" height="2637">
               <img loading="lazy" decoding="async" src="./static/images/nvs_replica.png"
                    class="interpolation-image" 
                    alt="Interpolate start reference image" 
-                   style="width: 80%; height: 100%; display: block; margin: 0 auto;">
+                   style="width:100%;width: 80%; height: auto; display: block; margin: 0 auto;" width="3281" height="2639">
               <p> 
                 <br>
               </p>
@@ -216,15 +217,15 @@
               <img loading="lazy" decoding="async" src="./static/images/sem_scannetppv2.png"
                    class="interpolation-image" 
                    alt="Interpolate start reference image" 
-                   style="width: 80%; height: 100%; display: block; margin: 0 auto;">
+                   style="width:100%;width: 80%; height: auto; display: block; margin: 0 auto;" width="4964" height="2629">
               <img loading="lazy" decoding="async" src="./static/images/sem_scannet.png"
                    class="interpolation-image" 
                    alt="Interpolate start reference image" 
-                   style="width: 80%; height: 100%; display: block; margin: 0 auto;">
+                   style="width:100%;width: 80%; height: auto; display: block; margin: 0 auto;" width="4963" height="2640">
               <img loading="lazy" decoding="async" src="./static/images/sem_replica.png"
                    class="interpolation-image" 
                    alt="Interpolate start reference image" 
-                   style="width: 80%; height: 100%; display: block; margin: 0 auto;">
+                   style="width:100%;width: 80%; height: auto; display: block; margin: 0 auto;" width="4965" height="2670">
             </div>
           </div>
         </div>
